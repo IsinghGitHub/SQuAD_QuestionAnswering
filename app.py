@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep 14 16:49:21 2021
+Created on Friday 17th Dec- 2021
 
-@author: Sudarshan_backup
+@author: Indrajit Singh
 """
 
 import pandas as pd
@@ -24,9 +24,9 @@ myQAModel = DistilBertForQuestionAnswering.from_pretrained(model_path)
 QAPipeline = QuestionAnsweringPipeline(model = myQAModel,tokenizer = tokenizer)
 
 # This is a markdown message at the beginning of my application in which I'm introducing myself and explaining the question. You should add whatever message you want to. 
-st.markdown("Hello, I am Sudarshan Sivakumar, a 3rd year Undergraduate in Computer Science and Engineering at the Manipal Institute of Technology. This is a Question Answering System I made using the Hugging Face transformers library on the Stanford Question Answering dataset. The model has been deployed using Streamlit")
+st.markdown("Project Devdoot testing")
 
-st.markdown("If you enter a context passage and ask a question whose answer is in the context, the program will give you an answer span from the passage which best answers the question")
+st.markdown("In America Vivekananda's mission was the interpretation of India's spiritual culture,especially in its Vedantic setting.")
 
 
 context = st.text_area("Context Paragraph", "")
